@@ -19,7 +19,7 @@ public class HelloFragment extends Fragment implements View.OnClickListener {
     Button btnLeft;
     Button btnRight;
     FrameLayout layout;
-    ImageView ivGallery;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater,
@@ -28,10 +28,9 @@ public class HelloFragment extends Fragment implements View.OnClickListener {
         // Inflate the layout for this fragment
         View v =  inflater.inflate(R.layout.fragment_hello, container, false);
 
-        btnLeft = (Button)v.findViewById(R.id.btnLeft);
-        btnRight = (Button)v.findViewById(R.id.btnRight);
+
         layout = (FrameLayout) v.findViewById(R.id.layout);
-        ivGallery = (ImageView)v.findViewById(R.id.ivGallery);
+
 
         btnLeft.setOnClickListener(this);
         btnRight.setOnClickListener(this);
@@ -39,14 +38,13 @@ public class HelloFragment extends Fragment implements View.OnClickListener {
         return v;
     }
 
-    int counter = 0;
-    int[] images = {R.mipmap.ic_launcher, R.mipmap.ic_launcher};
+
 
     @Override
     public void onClick(View v) {
         int rgb = Color.argb(255,128,0,128);
         layout.setBackgroundColor(rgb);
 
-        ivGallery.setImageResource(R.mipmap.ic_launcher);
+
     }
 }

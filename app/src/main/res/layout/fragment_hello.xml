@@ -10,17 +10,11 @@
 
     <Button
         android:id="@+id/btnLeft"
-        android:layout_gravity="left|center_vertical"
+        android:layout_gravity="center|center_vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Left" />
+        android:text="Change colour" />
 
-    <Button
-        android:id="@+id/btnRight"
-        android:layout_gravity="right|center_vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Right" />
 
 
 </FrameLayout>

@@ -6,9 +6,8 @@
     tools:context="android.course.fragments.images">
 
 
-
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/ivGallery"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="fitCenter"
@@ -17,21 +16,22 @@
     <Button
         android:id="@+id/btnLeft"
         android:layout_gravity="left|center_vertical"
-        android:background="#"
-
+        android:background="#0000"
+        android:onClick="back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#ffffff"
+        android:textColor="#000"
         android:textSize="48px"
         android:text="Back" />
 
     <Button
         android:id="@+id/btnRight"
         android:layout_gravity="right|center_vertical"
-        android:background="#"
+        android:background="#0000"
+        android:onClick="next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#ffffff"
+        android:textColor="#000000"
         android:textSize="48px"
         android:text="Next" />
 </FrameLayout>
